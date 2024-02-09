@@ -17,7 +17,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.35rem 10%;
+    padding: 1.35rem;
+    padding-left: 3%;
+    padding-right: 3%;
     display: flex;
     justify-content: space-between;
     align-items: center;
