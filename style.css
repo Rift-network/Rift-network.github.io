@@ -124,3 +124,7 @@ body {
     .content {
        margin: 5rem; 
     }
+
+    .content p {
+       color: white;
+    }
