@@ -21,7 +21,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 1;
 }
 
 .header::before {
@@ -138,18 +138,17 @@ h1 {
     margin-top: 5rem;
 }
 
-footer {
+.footer {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background: rgba(0, 0, 0, .3);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
     backdrop-filter: blur(10px);
-    z-index: -1;
 }
 
-footer .disclaimer {
+.footer .disclaimer {
     color: gray;
     text-align: center;
     font-size: .9rem;
@@ -162,5 +161,17 @@ footer .disclaimer {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: -1;
+}
+
+.footer .testme {
+    z-index: 100;
+    cursor: grab;
+}
+
+.footer .socials {
+    margin: .8rem .5rem;
+}
+
+.footer .socials img {
+    margin: 0 0.2rem;
 }
