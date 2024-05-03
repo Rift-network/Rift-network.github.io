@@ -151,7 +151,7 @@ h1 {
 .footer .disclaimer {
     color: gray;
     text-align: center;
-    font-size: .9rem;
+    font-size: 0.9rem;
     margin: .8rem;
 }
 
@@ -163,15 +163,22 @@ h1 {
     justify-content: center;
 }
 
-.footer .testme {
-    z-index: 100;
-    cursor: grab;
-}
-
 .footer .socials {
-    margin: .8rem .5rem;
+    display: flex;
+    margin: .8rem;
+    cursor: pointer;
+    justify-content: center;
 }
 
-.footer .socials img {
-    margin: 0 0.2rem;
+.footer .socials svg {
+    margin: 0 .4rem;
 }
+
+.footer .socials path {
+    fill: gray;
+}
+
+.footer .socials svg:hover path{
+    fill: white;
+}
+
