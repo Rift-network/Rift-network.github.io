@@ -8,7 +8,6 @@
 body {
     min-height: 100vh;
     background: url('../assets/Background.jpg') no-repeat;
-    /*background: rgb(255, 255, 255);*/
     background-size: cover;
     background-position: center;
 }
@@ -276,4 +275,15 @@ h1 {
     margin-right: 0;
     padding: .3rem;
     border-radius: .4rem;
+}
+
+.tag_ver {
+    background: url("../assets/Grass.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+    padding: .3rem;
+    border-radius: .4rem;
+    text-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
 }
