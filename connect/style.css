@@ -7,7 +7,8 @@
 
 body {
     min-height: 100vh;
-    background: url('https://img.freepik.com/free-photo/black-prism-concept-ai-generated_268835-7011.jpg') no-repeat;
+    background: url('../assets/Background.jpg') no-repeat;
+    /*background: rgb(255, 255, 255);*/
     background-size: cover;
     background-position: center;
 }
@@ -21,7 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 1;
 }
 
 .header::before {
@@ -80,7 +81,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 787px) {
     .icons {
         display: inline-flex;
     }
@@ -135,24 +136,22 @@ h1 {
     color: white;
     position: relative;
     z-index: 100;
-    margin-top: 5rem;
 }
 
-footer {
+.footer {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background: rgba(0, 0, 0, .3);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
     backdrop-filter: blur(10px);
-    z-index: -1;
 }
 
-footer .disclaimer {
+.footer .disclaimer {
     color: gray;
     text-align: center;
-    font-size: .9rem;
+    font-size: 0.9rem;
     margin: .8rem;
 }
 
@@ -162,5 +161,119 @@ footer .disclaimer {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: -1;
+}
+
+.footer .socials {
+    display: flex;
+    margin: .8rem;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.footer .socials svg {
+    margin: 0 .4rem;
+}
+
+.footer .socials path {
+    fill: gray;
+}
+
+.footer .socials svg:hover path{
+    fill: white;
+}
+
+/*#BGVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -100;
+  }
+
+#testBG {
+    color: rgba(255, 196, 0, 0.3);
+}*/
+
+.blur {
+    background: rgba(0, 0, 0, .3);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+    backdrop-filter: blur(10px);
+}
+
+.white {
+    color: white;
+}
+
+.padding {
+    padding: .8rem;
+}
+
+.rounded {
+    border-radius: .8rem;
+}
+
+.spaceBetweenY {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.margin {
+    margin: .8rem;
+}
+
+.margin_child > * {
+    margin: .8rem;
+}
+
+.padding_child > * {
+    padding: .8rem;
+}
+
+.size {
+    font-size: 2.5rem;
+}
+
+.xcenter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.xcenter_child > * {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#rightBox {
+    width: 20vw;
+}
+
+#connectIPs {
+    border-top-left-radius: 0; 
+    border-top-right-radius: 0; 
+    display: grid;
+    width: 20vw;
+}
+
+.h3 {
+    font-size: 1.1rem;
+}
+
+.tag_dev {
+    background: rgb(255 175 19);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+    margin-right: 0;
+    padding: .3rem;
+    border-radius: .4rem;
+}
+
+.tag_online {
+    background: rgb(44, 236, 18);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+    margin-right: 0;
+    padding: .3rem;
+    border-radius: .4rem;
 }
